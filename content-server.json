@@ -1,0 +1,382 @@
+{
+  "lessons": [
+    {
+      "title": "The Bamboo Buffet",
+      "unit": "Activities 1.2 & 2.4 • Diet, energy and nutrition",
+      "emoji": "🎋",
+      "scene": "A chilly morning in the Himalayan forest. Your red panda wakes up hungry. The bamboo is everywhere—but is it enough?",
+      "sections": [
+        {
+          "head": "What is on the menu?",
+          "body": "Red pandas eat mostly bamboo leaves and shoots. Their diet can also include fruits, berries, insects, eggs, and small animals. Even though red pandas belong to the mammal order Carnivora, their main food is plant material. Bamboo is common in their forest, but it is not a very energy-rich meal."
+        },
+        {
+          "head": "Why eat again and again?",
+          "body": "Because bamboo provides relatively little usable energy, red pandas spend a lot of time feeding and eat repeatedly during the day. They must balance the energy they gain from food with the energy they spend climbing, moving, staying warm, and growing."
+        },
+        {
+          "head": "Built to handle bamboo",
+          "body": "Strong jaws and teeth help crush tough bamboo. A special enlarged wrist bone acts like a false thumb, helping a red panda grip stalks. This is an adaptation: a trait that helps an organism function in its environment."
+        },
+        {
+          "head": "When food becomes scarce",
+          "body": "If bamboo is harder to find because of weather or forest loss, red pandas may search wider areas and eat other available foods. However, traveling farther also uses energy. A forest needs enough food to support its animals."
+        }
+      ],
+      "compare": "What does your organism eat? Does it have a body part or behavior that makes finding food easier?",
+      "decision": {
+        "prompt": "Your red panda finds a bamboo patch near safe trees. What is the best plan?",
+        "options": [
+          "Feed on bamboo and conserve energy nearby",
+          "Ignore food and sprint through the forest",
+          "Leave the forest for a hot open field"
+        ],
+        "correct": 0,
+        "why": "Bamboo is the main food source, and conserving energy matters when the diet is low in calories."
+      }
+    },
+    {
+      "title": "The Energy Lab",
+      "unit": "Activities 1.5, 1.4 & 1.6 • Digestion, enzymes, ATP",
+      "emoji": "⚡",
+      "scene": "You have eaten bamboo. Now the real work happens inside the body: turning food into usable energy.",
+      "sections": [
+        {
+          "head": "Digestion unlocks nutrients",
+          "body": "Food must be broken into smaller molecules before the body can use it. Enzymes help chemical reactions happen. The portfolio discusses cellulase in connection with breaking down plant cellulose; in mammals, microbes play an important role in cellulose breakdown rather than the animal making its own cellulase."
+        },
+        {
+          "head": "From food to ATP",
+          "body": "Cells use nutrients from food to make ATP, a molecule that provides usable energy for cellular activities. Moving, growing, repairing tissue, and keeping warm all require energy. Climbing or searching for food can increase energy needs."
+        },
+        {
+          "head": "Saving energy",
+          "body": "The lab describes red pandas as having a relatively slow metabolism that helps them conserve energy on a bamboo-heavy diet. Fat serves as long-term energy storage. In cold weather, saving energy and staying warm become especially important."
+        },
+        {
+          "head": "Growing up and milk",
+          "body": "As mammals, young red pandas drink their mother’s milk. The report explains that lactase helps young animals digest milk sugar and that lactase activity is lower later in life."
+        }
+      ],
+      "compare": "How does your organism get energy? Does it eat constantly, hunt occasionally, or store energy?",
+      "decision": {
+        "prompt": "A cold day arrives and food is limited. Which behavior best fits energy conservation?",
+        "options": [
+          "Climb nonstop for no reason",
+          "Rest in a sheltered place between feeding",
+          "Stop eating altogether for days"
+        ],
+        "correct": 1,
+        "why": "Resting in shelter helps conserve energy while the red panda continues to meet its food needs."
+      }
+    },
+    {
+      "title": "From Tiny Cub to Adult",
+      "unit": "Activities 2.1–2.3 • Growth, cell division and specialization",
+      "emoji": "🐾",
+      "scene": "A red panda cub is born. How can one fertilized cell eventually become a whole animal?",
+      "sections": [
+        {
+          "head": "One cell becomes many",
+          "body": "After fertilization, cell division produces more cells. These cells grow and develop into an embryo, then a cub, and eventually an adult. A red panda does not undergo metamorphosis like a butterfly."
+        },
+        {
+          "head": "Cells have different jobs",
+          "body": "Different kinds of cells specialize. Muscle cells contain proteins such as myosin that help movement. Red blood cells contain hemoglobin, which carries oxygen. Cells have the same basic genetic instructions but use different genes for different jobs."
+        },
+        {
+          "head": "Repair requires control",
+          "body": "Cell division helps a growing cub get bigger and helps replace damaged skin and repair wounds. It must be regulated so cells do not multiply uncontrollably. A red panda can heal tissue but cannot regrow an entire missing limb."
+        },
+        {
+          "head": "Genes and thick fur",
+          "body": "Gene regulation controls when and where genes are active. It contributes to traits such as thick fur, which helps red pandas survive in cold mountain forests."
+        }
+      ],
+      "compare": "How does your organism develop? Does it hatch, undergo metamorphosis, or grow like a mammal?",
+      "decision": {
+        "prompt": "A red panda scratches its skin while climbing. What helps the injury heal?",
+        "options": [
+          "Controlled cell division replaces damaged cells",
+          "The red panda grows a completely new body",
+          "Its fur turns into skin cells instantly"
+        ],
+        "correct": 0,
+        "why": "Controlled cell division helps repair damaged tissues."
+      }
+    },
+    {
+      "title": "The Evolution Trail",
+      "unit": "Activities 2.5 & 3.1–3.3 • Genes, inheritance and natural selection",
+      "emoji": "🧬",
+      "scene": "Not every red panda is identical. Some differences may matter when the environment changes.",
+      "sections": [
+        {
+          "head": "Inherited traits",
+          "body": "Cubs receive genetic information from both parents. Traits such as fur characteristics can be inherited. Genetic variation means individuals in a population do not all have exactly the same traits."
+        },
+        {
+          "head": "Mutation and variation",
+          "body": "The portfolio imagines variation in claws, eyesight, tails, and fur color. A mutation changes genetic material; not every change helps. Whether a trait is useful depends on the environment."
+        },
+        {
+          "head": "Natural selection across generations",
+          "body": "Imagine some red pandas have stronger claws. If these claws make it easier to climb away from danger, those animals might survive and reproduce more often. Their inherited traits could become more common over many generations. Individuals do not evolve a new trait simply because they need one."
+        },
+        {
+          "head": "Environment shapes advantage",
+          "body": "Thick fur is helpful in cold mountain forests. If conditions became much warmer, that same trait might be less useful. The report compares Himalayan and Chinese red panda populations as an example of variation."
+        }
+      ],
+      "compare": "Name one inherited trait in your organism. When would that trait help, and when might it not?",
+      "decision": {
+        "prompt": "Over many generations, which outcome best illustrates natural selection?",
+        "options": [
+          "Every red panda decides to grow stronger claws",
+          "Helpful inherited claw traits become more common after better survival and reproduction",
+          "One red panda changes its DNA by trying harder"
+        ],
+        "correct": 1,
+        "why": "Natural selection changes the frequency of inherited traits in populations over generations."
+      }
+    },
+    {
+      "title": "Find the Right Forest",
+      "unit": "Activities 3.4–3.5 • Biomes and habitat through time",
+      "emoji": "🏔️",
+      "scene": "A map offers three places to live. Only one has the food, shelter, and climate your red panda needs.",
+      "sections": [
+        {
+          "head": "The red panda’s home",
+          "body": "Red pandas live in cool, moist mountain forests in the Himalayas and nearby regions, including Nepal, India, Bhutan, Myanmar, and China. These forests contain bamboo, trees, shade, and places to rest and climb."
+        },
+        {
+          "head": "Why not the desert?",
+          "body": "A hot, dry desert usually lacks the bamboo and forest cover that red pandas depend on. Their thick fur is better suited to cool conditions. An animal’s biome affects its available food, water, shelter, and temperature."
+        },
+        {
+          "head": "Human changes to habitat",
+          "body": "The report describes forest clearing for farms and wood, road building, and growing settlements. These activities can reduce bamboo, split forests into isolated patches, and make it harder for animals to travel safely and find mates."
+        },
+        {
+          "head": "Adaptations have limits",
+          "body": "Sharp claws and a bushy tail help with climbing and balance, but they cannot replace a forest that has been destroyed. Protecting connected habitats helps animals reach resources."
+        }
+      ],
+      "compare": "What biome does your organism live in? Would it survive in a red panda’s mountain forest?",
+      "decision": {
+        "prompt": "Which place gives a red panda the best chance of survival?",
+        "options": [
+          "An exposed desert with no bamboo",
+          "A busy road with scattered trees",
+          "A cool, connected forest with bamboo"
+        ],
+        "correct": 2,
+        "why": "Red pandas depend on cool forest habitat with bamboo and safe climbing spaces."
+      }
+    },
+    {
+      "title": "Family Tree Mystery",
+      "unit": "Activity 3.6 • Classification and the tree of life",
+      "emoji": "🌳",
+      "scene": "You discover a giant panda and a raccoon. Which animal is the red panda most closely connected to?",
+      "sections": [
+        {
+          "head": "Meet Ailurus fulgens",
+          "body": "The red panda’s scientific name is Ailurus fulgens. It is a mammal in the order Carnivora and the only living member of its family, Ailuridae. Scientific classification helps scientists describe evolutionary relationships."
+        },
+        {
+          "head": "Looks can be misleading",
+          "body": "Red pandas and giant pandas both eat bamboo, but giant pandas are bears. Similar diets do not mean they belong to the same family. The report discusses raccoons, weasels, otters, and skunks as relatives sharing ancient common ancestry with red pandas."
+        },
+        {
+          "head": "Shared ancestors",
+          "body": "A tree of life shows branches of evolutionary relationships. Two species can share an ancient ancestor even when they look different today. Scientists use many kinds of evidence to understand these branches."
+        },
+        {
+          "head": "Old and new traits",
+          "body": "The report highlights claws as an ancestral trait and the false thumb as a specialized trait for gripping bamboo. Adaptations can develop over long evolutionary timescales."
+        }
+      ],
+      "compare": "Which organisms are related to yours? Is there a surprising look-alike that is not a close relative?",
+      "decision": {
+        "prompt": "A classmate says red pandas must be bears because giant pandas eat bamboo too. What should you say?",
+        "options": [
+          "They are in the same bear family",
+          "Their similar food does not make them the same family",
+          "All bamboo eaters are closely related"
+        ],
+        "correct": 1,
+        "why": "Red pandas belong to Ailuridae; giant pandas belong to the bear family."
+      }
+    },
+    {
+      "title": "Population Rescue",
+      "unit": "Activity 4.1 • Population ecology and carrying capacity",
+      "emoji": "🛟",
+      "scene": "A forest is shrinking. Can the red panda population continue to survive?",
+      "sections": [
+        {
+          "head": "Population pressure",
+          "body": "The report describes red panda numbers as declining and the species as endangered. Red pandas are difficult to count because they live in mountain forests and spend time in trees."
+        },
+        {
+          "head": "Food and predators",
+          "body": "Bamboo availability is a bottom-up limiting factor because it begins with the food supply. Predators and disease are top-down pressures. Free-roaming dogs can also threaten red pandas and spread disease."
+        },
+        {
+          "head": "Density matters",
+          "body": "When more animals share the same limited bamboo, competition for food may increase. This is density-dependent: its impact can change with how crowded the population is."
+        },
+        {
+          "head": "Carrying capacity",
+          "body": "Carrying capacity is the number of individuals an environment can support over time with its food, water, and shelter. When forests shrink, the number of red pandas the habitat can support may fall."
+        }
+      ],
+      "compare": "What limits your organism’s population: food, space, predators, disease, or something else?",
+      "decision": {
+        "prompt": "A road divides one forest into two isolated patches. What would most help the population?",
+        "options": [
+          "Protect and reconnect forest habitat",
+          "Remove all bamboo",
+          "Build more roads through the remaining forest"
+        ],
+        "correct": 0,
+        "why": "Connected forest habitat supports movement, food access, and opportunities to find mates."
+      }
+    },
+    {
+      "title": "Food Web Finale",
+      "unit": "Activity 4.2 • Energy flow and ecological relationships",
+      "emoji": "🕸️",
+      "scene": "Every organism is connected. What happens when one part of the forest food web changes?",
+      "sections": [
+        {
+          "head": "Follow the energy",
+          "body": "The portfolio illustrates an energy pathway: Sun → Bamboo → Red Panda → Snow Leopard (a possible predator). Bamboo is a producer because it uses sunlight to make food. A red panda eating bamboo acts mainly as a primary consumer."
+        },
+        {
+          "head": "Direct interactions",
+          "body": "Bamboo provides food. Possible predators create danger. Livestock such as goats and cattle can compete for vegetation in some places. Organisms affect one another through feeding and competition."
+        },
+        {
+          "head": "Indirect changes",
+          "body": "If red panda numbers fall, less bamboo might be eaten in some places, although many other factors also affect plant growth. A change in one population can cause effects elsewhere in a food web."
+        },
+        {
+          "head": "Why conservation helps others",
+          "body": "The report describes red pandas as an umbrella species, not a confirmed keystone species. Protecting their forest can also protect many other plants and animals that share the habitat."
+        }
+      ],
+      "compare": "What role does your organism play in a food web? What might change if its population decreased?",
+      "decision": {
+        "prompt": "Which choice best explains why protecting red panda habitat matters?",
+        "options": [
+          "Only red pandas use the forest",
+          "Protecting forest can also benefit many other species",
+          "Food webs have no connections"
+        ],
+        "correct": 1,
+        "why": "Red pandas can serve as an umbrella species: protecting their habitat benefits other forest life."
+      }
+    }
+  ],
+  "questions": [
+    {
+      "q": "Why do red pandas need to eat bamboo repeatedly during the day?",
+      "a": [
+        "Bamboo provides relatively little energy",
+        "Bamboo has no water at all",
+        "They cannot digest any other food",
+        "They only eat after sunset"
+      ],
+      "c": 0,
+      "why": "Bamboo is low in usable energy, so repeated feeding helps meet energy needs.",
+      "lesson": 0
+    },
+    {
+      "q": "What do cells use ATP for?",
+      "a": [
+        "Making sunlight",
+        "Storing genetic ancestry",
+        "Powering cellular activities",
+        "Building forest habitats"
+      ],
+      "c": 2,
+      "why": "ATP provides usable energy for movement, growth, and other cellular work.",
+      "lesson": 1
+    },
+    {
+      "q": "What helps a red panda cub grow into an adult?",
+      "a": [
+        "Controlled cell division and growth",
+        "Changing into a different species",
+        "Losing all its original cells at once",
+        "Metamorphosis into an insect"
+      ],
+      "c": 0,
+      "why": "Cell division produces new cells for growth and repair.",
+      "lesson": 2
+    },
+    {
+      "q": "Which example best describes natural selection?",
+      "a": [
+        "One animal chooses to mutate",
+        "A population stops reproducing",
+        "Helpful inherited traits become more common across generations",
+        "Every organism develops identical traits"
+      ],
+      "c": 2,
+      "why": "Natural selection acts across generations through differences in survival and reproduction.",
+      "lesson": 3
+    },
+    {
+      "q": "Which habitat best matches a red panda’s needs?",
+      "a": [
+        "Cool moist forest with bamboo",
+        "Hot dry desert",
+        "Open ocean",
+        "Treeless salt flat"
+      ],
+      "c": 0,
+      "why": "Red pandas rely on mountain forests with bamboo and climbing trees.",
+      "lesson": 4
+    },
+    {
+      "q": "Which family does the red panda belong to?",
+      "a": [
+        "Ursidae (bears)",
+        "Felidae (cats)",
+        "Ailuridae",
+        "Canidae (dogs)"
+      ],
+      "c": 2,
+      "why": "Red pandas are the only living members of Ailuridae.",
+      "lesson": 5
+    },
+    {
+      "q": "What is carrying capacity?",
+      "a": [
+        "How fast an animal climbs",
+        "The weight of a tree branch",
+        "The number of predators alone",
+        "How many individuals a habitat can support over time"
+      ],
+      "c": 3,
+      "why": "Food, water, shelter, and space help determine carrying capacity.",
+      "lesson": 6
+    },
+    {
+      "q": "In the report’s food pathway, what role does bamboo play?",
+      "a": [
+        "Top predator",
+        "Producer",
+        "Secondary consumer",
+        "Parasite"
+      ],
+      "c": 1,
+      "why": "Bamboo makes its own food using sunlight, so it is a producer.",
+      "lesson": 7
+    }
+  ]
+}
