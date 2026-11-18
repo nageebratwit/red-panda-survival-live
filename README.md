@@ -38,3 +38,7 @@ Install Node.js 20 or later. In this folder run `npm install`, then `npm start`,
 
 ## 20-second mission voting update
 Each survival vote starts a server-controlled 20-second timer. The host and students see a countdown, and results with the correct answer and explanation appear automatically at zero. The manual close/reveal and back-to-lesson controls during voting have been removed. Organism comparison discussion cards are removed. The eight final quiz questions still use their existing timing.
+
+
+### Synchronized countdown
+Host and phones use the same server-set deadline. Devices calibrate their clock offset against the server when connected and every 10 seconds using a round-trip midpoint estimate. The server closes voting at 20 seconds regardless of client clock settings. Network latency may cause a small visual difference.
