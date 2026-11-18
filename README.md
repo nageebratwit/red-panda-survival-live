@@ -28,3 +28,9 @@ Install Node.js 20 or later. In this folder run `npm install`, then `npm start`,
 - One server instance only. This version has no database, moderation, player authentication, or automatic timer; host advances manually.
 - Students should use nicknames, not full names.
 - Hosting services may change their free-plan availability, so verify your selected plan and charges before deployment.
+
+## Red Panda themed 8-question edition
+- All eight teaching missions remain, followed by eight final quiz questions (one per mission).
+- Host can use **Back to main page (reset round)** from any game screen to return everyone to the joining lobby and reset scores.
+- Existing joined players remain in the lobby; the same QR code and room number continue to work.
+- Upload **the contents** of this folder to the existing GitHub repository root, replacing matching files. Render should redeploy after commit.
