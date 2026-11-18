@@ -34,3 +34,7 @@ Install Node.js 20 or later. In this folder run `npm install`, then `npm start`,
 - Host can use **Back to main page (reset round)** from any game screen to return everyone to the joining lobby and reset scores.
 - Existing joined players remain in the lobby; the same QR code and room number continue to work.
 - Upload **the contents** of this folder to the existing GitHub repository root, replacing matching files. Render should redeploy after commit.
+
+
+## 20-second mission voting update
+Each survival vote starts a server-controlled 20-second timer. The host and students see a countdown, and results with the correct answer and explanation appear automatically at zero. The manual close/reveal and back-to-lesson controls during voting have been removed. Organism comparison discussion cards are removed. The eight final quiz questions still use their existing timing.

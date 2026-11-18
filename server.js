@@ -18,6 +18,7 @@ function fail(cb,msg){if(typeof cb==='function')cb({ok:false,error:msg});}
 function ok(cb,obj={}){if(typeof cb==='function')cb({ok:true,...obj});}
 function roomForHost(s){const r=rooms.get(s.data.code);return r&&r.hostToken===s.data.hostToken?r:null;}
 function roomForPlayer(s){const r=rooms.get(s.data.code);const p=r?.players.get(s.data.playerId);return r&&p&&p.token===s.data.playerToken?{r,p}:null;}
+function endDecision(r){if(r.phase!=='decision')return;r.phase='decision-reveal';r.deadline=null;r.timer=null;broadcast(r);}
 function endQuestion(r){if(r.phase!=='question')return;r.phase='reveal';r.deadline=null;r.revealCorrect=require('./public/content-server.json').questions[r.question].c;broadcast(r);}
 const DATA=require('./public/content-server.json');
 io.on('connection',socket=>{
@@ -27,9 +28,9 @@ io.on('connection',socket=>{
  socket.on('host-action',({action,value},cb)=>{const r=roomForHost(socket);if(!r)return fail(cb,'Only the host can control the game.');clearTimeout(r.timer);r.timer=null;r.deadline=null;
  if(action==='start'){r.started=true;r.phase='lesson';r.lesson=0;r.question=0;}
  else if(action==='lesson'){r.phase='lesson';r.lesson=Math.max(0,Math.min(DATA.lessons.length-1,Number(value)||0));}
- else if(action==='decision'){r.phase='decision';r.decisionAnswers.clear();}
+ else if(action==='decision'){r.phase='decision';r.decisionAnswers.clear();r.deadline=Date.now()+20000;r.timer=setTimeout(()=>endDecision(r),20000);}
  else if(action==='decision-reveal'){if(r.phase!=='decision')return fail(cb,'No active survival vote.');r.phase='decision-reveal';}
- else if(action==='decision-back'){r.phase='decision';r.decisionAnswers.clear();}
+ else if(action==='decision-back'){r.phase='decision';r.decisionAnswers.clear();r.deadline=Date.now()+20000;r.timer=setTimeout(()=>endDecision(r),20000);}
  else if(action==='next-lesson'){if(r.phase!=='decision-reveal')return fail(cb,'Reveal the class vote before moving on.');if(r.lesson<DATA.lessons.length-1){r.lesson++;r.phase='lesson';}else{r.phase='quiz-intro';}}
  else if(action==='quiz-intro'){r.phase='quiz-intro';}
  else if(action==='ask'){r.phase='question';r.answers.clear();r.revealCorrect=null;r.seconds=Math.max(10,Math.min(90,Number(value)||25));r.deadline=Date.now()+r.seconds*1000;r.timer=setTimeout(()=>endQuestion(r),r.seconds*1000);}
@@ -38,7 +39,7 @@ io.on('connection',socket=>{
  else if(action==='home'){r.phase='lobby';r.started=false;r.lesson=0;r.question=0;r.answers.clear();r.decisionAnswers.clear();for(const p of r.players.values())p.score=0;}
  else if(action==='restart'){r.phase='lobby';r.started=false;r.lesson=0;r.question=0;r.answers.clear();r.decisionAnswers.clear();for(const p of r.players.values())p.score=0;}
  else return fail(cb,'Unknown action.');ok(cb);broadcast(r);});
- socket.on('decision-vote',({choice},cb)=>{const x=roomForPlayer(socket);if(!x)return fail(cb,'Please join the game.');const {r,p}=x;if(r.phase!=='decision')return fail(cb,'Voting is not open.');if(r.decisionAnswers.has(p.id))return fail(cb,'Your vote is already locked in.');choice=Number(choice);const d=DATA.lessons[r.lesson].decision;if(!Number.isInteger(choice)||choice<0||choice>=d.options.length)return fail(cb,'Invalid choice.');r.decisionAnswers.set(p.id,{id:p.id,name:p.name,choice});ok(cb);broadcast(r);});
+ socket.on('decision-vote',({choice},cb)=>{const x=roomForPlayer(socket);if(!x)return fail(cb,'Please join the game.');const {r,p}=x;if(r.phase!=='decision'||!r.deadline||Date.now()>=r.deadline)return fail(cb,'Voting has closed.');if(r.decisionAnswers.has(p.id))return fail(cb,'Your vote is already locked in.');choice=Number(choice);const d=DATA.lessons[r.lesson].decision;if(!Number.isInteger(choice)||choice<0||choice>=d.options.length)return fail(cb,'Invalid choice.');r.decisionAnswers.set(p.id,{id:p.id,name:p.name,choice});ok(cb);broadcast(r);});
  socket.on('answer',({choice},cb)=>{const x=roomForPlayer(socket);if(!x)return fail(cb,'Please join the game.');const {r,p}=x;if(r.phase!=='question'||!r.deadline||Date.now()>r.deadline)return fail(cb,'Question closed.');if(r.answers.has(p.id))return fail(cb,'Answer already submitted.');choice=Number(choice);if(!Number.isInteger(choice)||choice<0||choice>3)return fail(cb,'Invalid answer.');const correct=choice===DATA.questions[r.question].c;const remaining=Math.max(0,r.deadline-Date.now());const points=correct?100+Math.floor(remaining/r.seconds/1000*50):0;p.score+=points;r.answers.set(p.id,{id:p.id,name:p.name,choice,correct,points});ok(cb,{points});broadcast(r);if(r.players.size>0&&[...r.players.values()].every(p=>r.answers.has(p.id))) {clearTimeout(r.timer);r.timer=setTimeout(()=>endQuestion(r),800);} });
  socket.on('disconnect',()=>{const r=rooms.get(socket.data.code);if(!r)return;if(r.hostSocket===socket.id)r.hostSocket=null;const p=r.players.get(socket.data.playerId);if(p&&p.socketId===socket.id)p.socketId=null;broadcast(r);});
 });
